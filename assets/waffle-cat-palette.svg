@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="490" viewBox="0 0 1200 490" role="img" aria-labelledby="title desc">
+  <title id="title">Waffle Cat 2.0 Base24 palette</title>
+  <desc id="desc">Twenty-four warm dark colors arranged as the cocoa ramp, core accents, and Base24 extension.</desc>
+  <rect width="1200" height="490" rx="24" fill="#151013"/>
+  <rect x="1" y="1" width="1198" height="488" rx="23" fill="none" stroke="#6B5650" stroke-width="2"/>
+  <text x="50" y="48" fill="#FFF4D8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="25" font-weight="700">Waffle Cat 2.0</text>
+  <text x="1150" y="48" fill="#A58C82" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" text-anchor="end">BASE24 · 24 COLORS</text>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="50" y="88" fill="#C8964B" font-size="13" font-weight="700" letter-spacing="1.5">COCOA &amp; CREAM RAMP</text>
+    <rect x="50" y="104" width="120" height="48" rx="8" fill="#292025" stroke="#6B5650"/>
+    <rect x="190" y="104" width="120" height="48" rx="8" fill="#362D30" stroke="#6B5650"/>
+    <rect x="330" y="104" width="120" height="48" rx="8" fill="#6B5650"/>
+    <rect x="470" y="104" width="120" height="48" rx="8" fill="#A58C82"/>
+    <rect x="610" y="104" width="120" height="48" rx="8" fill="#A58C82"/>
+    <rect x="750" y="104" width="120" height="48" rx="8" fill="#FFF4D8"/>
+    <rect x="890" y="104" width="120" height="48" rx="8" fill="#FFF4D8"/>
+    <rect x="1030" y="104" width="120" height="48" rx="8" fill="#FFFAF0"/>
+    <g fill="#FFF4D8" font-size="12" text-anchor="middle">
+      <text x="110" y="171">Cocoa Shadow</text><text x="250" y="171">Waffle Crumb</text><text x="390" y="171">Syrup Wash</text><text x="530" y="171">Coffee Dust</text>
+      <text x="670" y="171">Coffee Foam</text><text x="810" y="171">Vanilla Cream</text><text x="950" y="171">Warm Milk</text><text x="1090" y="171">Whipped Cream</text>
+    </g>
+    <g fill="#A58C82" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" text-anchor="middle">
+      <text x="110" y="188">00 · #292025</text><text x="250" y="188">01 · #362D30</text><text x="390" y="188">02 · #6B5650</text><text x="530" y="188">03 · #A58C82</text>
+      <text x="670" y="188">04 · #A58C82</text><text x="810" y="188">05 · #FFF4D8</text><text x="950" y="188">06 · #FFF4D8</text><text x="1090" y="188">07 · #FFFAF0</text>
+    </g>
+
+    <text x="50" y="228" fill="#C8964B" font-size="13" font-weight="700" letter-spacing="1.5">TOASTED WAFFLE ACCENTS</text>
+    <rect x="50" y="244" width="120" height="48" rx="8" fill="#CF7358"/>
+    <rect x="190" y="244" width="120" height="48" rx="8" fill="#C8964B"/>
+    <rect x="330" y="244" width="120" height="48" rx="8" fill="#C8964B"/>
+    <rect x="470" y="244" width="120" height="48" rx="8" fill="#9FAD68"/>
+    <rect x="610" y="244" width="120" height="48" rx="8" fill="#9EB8B2"/>
+    <rect x="750" y="244" width="120" height="48" rx="8" fill="#C87D2A"/>
+    <rect x="890" y="244" width="120" height="48" rx="8" fill="#C98C97"/>
+    <rect x="1030" y="244" width="120" height="48" rx="8" fill="#644B26"/>
+    <g fill="#FFF4D8" font-size="12" text-anchor="middle">
+      <text x="110" y="311">Berry Syrup</text><text x="250" y="311">Toasted Honey</text><text x="390" y="311">Honey Glaze</text><text x="530" y="311">Pistachio Crumb</text>
+      <text x="670" y="311">Cool Porcelain</text><text x="810" y="311">Honey Amber</text><text x="950" y="311">Strawberry Milk</text><text x="1090" y="311">Dark Syrup</text>
+    </g>
+    <g fill="#A58C82" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" text-anchor="middle">
+      <text x="110" y="328">08 · #CF7358</text><text x="250" y="328">09 · #C8964B</text><text x="390" y="328">0A · #C8964B</text><text x="530" y="328">0B · #9FAD68</text>
+      <text x="670" y="328">0C · #9EB8B2</text><text x="810" y="328">0D · #C87D2A</text><text x="950" y="328">0E · #C98C97</text><text x="1090" y="328">0F · #644B26</text>
+    </g>
+
+    <text x="50" y="368" fill="#C8964B" font-size="13" font-weight="700" letter-spacing="1.5">BASE24 EXTENSION</text>
+    <rect x="50" y="384" width="120" height="48" rx="8" fill="#1F181C" stroke="#6B5650"/>
+    <rect x="190" y="384" width="120" height="48" rx="8" fill="#151013" stroke="#6B5650"/>
+    <rect x="330" y="384" width="120" height="48" rx="8" fill="#E58A70"/>
+    <rect x="470" y="384" width="120" height="48" rx="8" fill="#E4C56D"/>
+    <rect x="610" y="384" width="120" height="48" rx="8" fill="#B9C97F"/>
+    <rect x="750" y="384" width="120" height="48" rx="8" fill="#C2D5D0"/>
+    <rect x="890" y="384" width="120" height="48" rx="8" fill="#DF9850"/>
+    <rect x="1030" y="384" width="120" height="48" rx="8" fill="#DDB0B8"/>
+    <g fill="#FFF4D8" font-size="12" text-anchor="middle">
+      <text x="110" y="451">Deep Cocoa</text><text x="250" y="451">Midnight Cocoa</text><text x="390" y="451">Berry Glaze</text><text x="530" y="451">Golden Waffle</text>
+      <text x="670" y="451">Pistachio Cream</text><text x="810" y="451">Porcelain Gleam</text><text x="950" y="451">Amber Drizzle</text><text x="1090" y="451">Strawberry Foam</text>
+    </g>
+    <g fill="#A58C82" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" text-anchor="middle">
+      <text x="110" y="468">10 · #1F181C</text><text x="250" y="468">11 · #151013</text><text x="390" y="468">12 · #E58A70</text><text x="530" y="468">13 · #E4C56D</text>
+      <text x="670" y="468">14 · #B9C97F</text><text x="810" y="468">15 · #C2D5D0</text><text x="950" y="468">16 · #DF9850</text><text x="1090" y="468">17 · #DDB0B8</text>
+    </g>
+  </g>
+</svg>

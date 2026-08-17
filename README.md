@@ -1,84 +1,87 @@
-# Waffle Cat
-
 <p align="center">
-  <img src="waffle-cat-logo-concept.png" alt="Waffle Cat logo" width="240">
+  <img src="assets/waffle-cat-banner.png" alt="Waffle Cat 2.0" width="920">
 </p>
 
-Waffle Cat is a warm, mature daily-driver colorscheme built from syrup brown,
-coffee, toasted waffle, honey amber, vanilla cream, and restrained support
-colors. Version 2.0 replaces the alpha palette with the color system developed
-for the completed [Omarchy Waffle Cat theme][omarchy-theme].
+<p align="center">
+  <strong>A syrup-dark Base24 colorscheme for terminals, editors, and the command line.</strong><br>
+  Cocoa shadows. Vanilla text. Honey amber where it matters.
+</p>
 
-Honey amber is the dominant accent. Error red, pistachio green, porcelain cyan,
-and strawberry magenta remain distinct without competing for attention.
+<p align="center">
+  <a href="https://github.com/OldJobobo/waffle-cat/releases/tag/v2.0.0"><img alt="Waffle Cat release" src="https://img.shields.io/badge/release-v2.0.0-C87D2A?style=for-the-badge&labelColor=292025"></a>
+  <a href="palette/waffle-cat-base24.yaml"><img alt="Base24 palette" src="https://img.shields.io/badge/palette-Base24-9FAD68?style=for-the-badge&labelColor=292025"></a>
+  <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-9EB8B2?style=for-the-badge&labelColor=292025"></a>
+  <img alt="Fourteen supported targets" src="https://img.shields.io/badge/ports-14-C98C97?style=for-the-badge&labelColor=292025">
+</p>
 
-## Preview
+<p align="center">
+  <a href="#palette">Palette</a> ·
+  <a href="#ports">Ports</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#gallery">Gallery</a> ·
+  <a href="#quality">Quality</a>
+</p>
 
-| Terminal palette | Neovim | VS Code |
-|---|---|---|
-| ![Alacritty terminal palette](screenshots/alacritty-ansi.png) | ![Neovim preview](screenshots/neovim-editor.png) | ![VS Code preview](screenshots/vscode-editor.png) |
+---
 
-Additional terminal and opacity captures are available in [`screenshots/`](screenshots/).
-The recorded review results are in [`screenshots/QA.md`](screenshots/QA.md).
+Waffle Cat is warm without turning sepia and colorful without becoming loud.
+Its cocoa background is low-glare, its cream foreground stays crisp, and honey
+amber carries the visual hierarchy. Berry red, pistachio green, porcelain cyan,
+and strawberry pink are supporting voices—not a row of competing neon signs.
+
+Version 2.0 is the finished palette: authored in the
+[Omarchy Waffle Cat theme][omarchy-theme], translated here into portable,
+validated formats, and preserved as both canonical Base24 and reduced Base16.
 
 ## Palette
 
-[`palette/waffle-cat-base24.yaml`](palette/waffle-cat-base24.yaml) is the
-canonical portable palette. Base24 retains the authored bright ANSI colors and
-the extended dark background ramp. The Base16 file is a deliberate reduction
-for consumers that only understand sixteen slots.
+<p align="center">
+  <img src="assets/waffle-cat-palette.svg" alt="The complete Waffle Cat 2.0 Base24 palette" width="100%">
+</p>
 
-| Role | Color | Hex |
-|---|---:|---|
-| Background | <span style="color:#292025">■</span> | `#292025` |
-| Foreground | <span style="color:#fff4d8">■</span> | `#fff4d8` |
-| Honey amber | <span style="color:#c87d2a">■</span> | `#c87d2a` |
-| Error red | <span style="color:#cf7358">■</span> | `#cf7358` |
-| Pistachio green | <span style="color:#9fad68">■</span> | `#9fad68` |
-| Toasted yellow | <span style="color:#c8964b">■</span> | `#c8964b` |
-| Porcelain cyan | <span style="color:#9eb8b2">■</span> | `#9eb8b2` |
-| Strawberry magenta | <span style="color:#c98c97">■</span> | `#c98c97` |
-| Syrup brown | <span style="color:#644b26">■</span> | `#644b26` |
+### Two canonical exports
 
-## Included targets
+| Palette | Purpose |
+|---|---|
+| [`waffle-cat-base24.yaml`](palette/waffle-cat-base24.yaml) | **Canonical.** Preserves the full dark ramp, explicit ANSI brights, and all authored Waffle Cat 2.0 values. |
+| [`waffle-cat-base16.yaml`](palette/waffle-cat-base16.yaml) | **Compatible reduction.** Exactly `base00` through `base0F` for Base16-only consumers. |
 
-### Terminals
+The terminal palette does not guess ANSI roles from Base16 ordering. Every
+normal and bright slot is mapped explicitly from the semantic Base24 palette.
 
-- Alacritty
-- Foot
-- Ghostty
-- Kitty
-- WezTerm
-- Warp
+## Ports
 
-### Editors
+One palette, fourteen ready-to-use targets.
 
-- Standalone Neovim colorscheme
-- Helix
-- VS Code
-- Zed
+| Terminals | Editors | Command line |
+|---|---|---|
+| [Alacritty](configs/alacritty.toml) | [Neovim](colors/waffle-cat.lua) | [tmux](configs/tmux.conf) |
+| [Foot](configs/foot.ini) | [Helix](configs/helix.toml) | [bat](configs/waffle-cat.tmTheme) |
+| [Ghostty](configs/ghostty.conf) | [VS Code](configs/vscode-theme.json) | [delta](configs/delta.gitconfig) |
+| [Kitty](configs/kitty.conf) | [Zed](configs/zed.json) | [fzf](configs/fzf.sh) |
+| [WezTerm](configs/wezterm.lua) |  |  |
+| [Warp](configs/warp.yaml) |  |  |
 
-### CLI tools
-
-- tmux
-- bat
-- delta
-- fzf
+Generated files live in [`configs/`](configs/). The standalone Neovim
+colorscheme lives in [`colors/waffle-cat.lua`](colors/waffle-cat.lua).
 
 ## Install
 
-Clone the repository to a stable location:
+Start with one clone in a stable location:
 
 ```bash
 git clone https://github.com/OldJobobo/waffle-cat.git \
   "$HOME/.local/share/waffle-cat"
 ```
 
-The examples below assume that path. Replace it if you clone elsewhere.
+Then wire in only the ports you use. The recipes below assume that clone path.
+
+<details>
+<summary><strong>Terminal emulators</strong> — Alacritty, Foot, Ghostty, Kitty, WezTerm, Warp</summary>
 
 ### Alacritty
 
-Import the generated color tables from `~/.config/alacritty/alacritty.toml`:
+Import Waffle Cat from `~/.config/alacritty/alacritty.toml`:
 
 ```toml
 [general]
@@ -93,8 +96,7 @@ Add this at the top level of `~/.config/foot/foot.ini`:
 include=~/.local/share/waffle-cat/configs/foot.ini
 ```
 
-Foot requires an absolute path if tilde expansion is unavailable in your
-version.
+If your Foot version does not expand `~`, use the absolute path.
 
 ### Ghostty
 
@@ -104,7 +106,7 @@ Load the color fragment from `~/.config/ghostty/config`:
 config-file = ~/.local/share/waffle-cat/configs/ghostty.conf
 ```
 
-You can test it without changing your config:
+Test it first, if you like:
 
 ```bash
 ghostty --config-file="$HOME/.local/share/waffle-cat/configs/ghostty.conf"
@@ -120,16 +122,35 @@ include ~/.local/share/waffle-cat/configs/kitty.conf
 
 ### WezTerm
 
-`configs/wezterm.lua` is a complete colors-only WezTerm configuration. Use it
-directly from `~/.wezterm.lua` while retaining space for local settings:
+`configs/wezterm.lua` returns a complete colors-only configuration, ready for
+local settings:
 
 ```lua
 local config = dofile(os.getenv("HOME") .. "/.local/share/waffle-cat/configs/wezterm.lua")
 
--- Add your own font, window, key, and domain settings here.
+-- Font, window, key, and domain settings can follow here.
 
 return config
 ```
+
+### Warp
+
+On Linux, install the YAML theme into Warp's XDG data directory:
+
+```bash
+warp_themes="${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/themes"
+mkdir -p "$warp_themes"
+ln -sfn \
+  "$HOME/.local/share/waffle-cat/configs/warp.yaml" \
+  "$warp_themes/waffle-cat.yaml"
+```
+
+Restart Warp and select **Waffle Cat** under Appearance.
+
+</details>
+
+<details>
+<summary><strong>Editors</strong> — Neovim, Helix, VS Code, Zed</summary>
 
 ### Neovim
 
@@ -142,14 +163,14 @@ ln -sfn \
   "$HOME/.config/nvim/colors/waffle-cat.lua"
 ```
 
-Then select it from `init.lua`:
+Select it from `init.lua`:
 
 ```lua
 vim.cmd.colorscheme("waffle-cat")
 ```
 
-The root `neovim.lua` is an optional LazyVim selector. The standalone
-colorscheme does not require LazyVim or Aether.
+The root [`neovim.lua`](neovim.lua) is an optional LazyVim selector. The
+standalone colorscheme requires neither LazyVim nor Aether.
 
 ### Helix
 
@@ -160,7 +181,7 @@ ln -sfn \
   "$HOME/.config/helix/themes/waffle-cat.toml"
 ```
 
-Set the theme in `~/.config/helix/config.toml`:
+Set it in `~/.config/helix/config.toml`:
 
 ```toml
 theme = "waffle-cat"
@@ -168,8 +189,8 @@ theme = "waffle-cat"
 
 ### VS Code
 
-The repository ships a plain VS Code color-theme JSON file. For a local
-extension install, create a minimal theme extension:
+The repository ships a plain color-theme JSON. Install it as a small local
+extension:
 
 ```bash
 extension="$HOME/.vscode/extensions/oldjobobo.waffle-cat-2.0.0"
@@ -185,13 +206,11 @@ cat > "$extension/package.json" <<'JSON'
   "engines": { "vscode": "^1.80.0" },
   "categories": ["Themes"],
   "contributes": {
-    "themes": [
-      {
-        "label": "Waffle Cat",
-        "uiTheme": "vs-dark",
-        "path": "./themes/waffle-cat-color-theme.json"
-      }
-    ]
+    "themes": [{
+      "label": "Waffle Cat",
+      "uiTheme": "vs-dark",
+      "path": "./themes/waffle-cat-color-theme.json"
+    }]
   }
 }
 JSON
@@ -210,6 +229,11 @@ ln -sfn \
 
 Select **Waffle Cat** from Zed's theme selector.
 
+</details>
+
+<details>
+<summary><strong>Command-line tools</strong> — tmux, bat, delta, fzf</summary>
+
 ### tmux
 
 Add this to `~/.tmux.conf`:
@@ -218,11 +242,7 @@ Add this to `~/.tmux.conf`:
 source-file ~/.local/share/waffle-cat/configs/tmux.conf
 ```
 
-Reload with:
-
-```bash
-tmux source-file "$HOME/.tmux.conf"
-```
+Reload with `tmux source-file ~/.tmux.conf`.
 
 ### bat
 
@@ -234,7 +254,7 @@ ln -sfn \
 bat cache --build
 ```
 
-Add this to bat's config file:
+Add the following to bat's config file:
 
 ```text
 --theme=waffle-cat
@@ -242,8 +262,8 @@ Add this to bat's config file:
 
 ### delta
 
-Install the bat theme first, because delta uses it for syntax highlighting.
-Include the generated feature from `~/.gitconfig`:
+Install the bat theme first—delta uses it for syntax highlighting. Then include
+the generated Waffle Cat feature from `~/.gitconfig`:
 
 ```gitconfig
 [include]
@@ -261,98 +281,107 @@ Include the generated feature from `~/.gitconfig`:
 
 ### fzf
 
-Source the generated POSIX shell fragment from `.bashrc`, `.zshrc`, or another
-compatible shell startup file:
+Source the generated shell fragment from `.bashrc`, `.zshrc`, or another
+compatible startup file:
 
 ```bash
 . "$HOME/.local/share/waffle-cat/configs/fzf.sh"
 ```
 
-The fragment preserves existing `FZF_DEFAULT_OPTS` and appends Waffle Cat's
-color options.
+It preserves existing `FZF_DEFAULT_OPTS` and appends Waffle Cat's colors.
 
-### Warp
+</details>
 
-On Linux:
+## Gallery
 
-```bash
-warp_themes="${XDG_DATA_HOME:-$HOME/.local/share}/warp-terminal/themes"
-mkdir -p "$warp_themes"
-ln -sfn \
-  "$HOME/.local/share/waffle-cat/configs/warp.yaml" \
-  "$warp_themes/waffle-cat.yaml"
-```
+### Editor
 
-Restart Warp and select **Waffle Cat** under Appearance.
+<p align="center">
+  <img src="screenshots/vscode-editor.png" alt="Waffle Cat in Visual Studio Code" width="100%">
+</p>
 
-## Development
+### Terminal and transparency
 
-Generation requires Python 3.11 or newer and PyYAML.
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/alacritty-ansi.png" alt="Waffle Cat ANSI and semantic palette in Alacritty"></td>
+    <td width="50%"><img src="screenshots/opacity-85-dark-wallpaper.png" alt="Waffle Cat terminal at 85 percent opacity"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Explicit ANSI + Base24 semantic roles</sub></td>
+    <td align="center"><sub>85% opacity against a dark wallpaper</sub></td>
+  </tr>
+</table>
+
+The full QA gallery includes Alacritty, Foot, Ghostty, Kitty, WezTerm, Neovim,
+VS Code, and dark/light transparency checks in [`screenshots/`](screenshots/).
+
+## Quality
+
+Waffle Cat is tested as a palette system, not just checked by eye once.
+
+| Check | Result |
+|---|---:|
+| Foreground on background | **14.45:1** |
+| Muted text on background | **5.03:1** |
+| Error red on background | **4.70:1** |
+| Honey amber on background | **4.84:1** |
+| ANSI bright colors | Brighter than every normal counterpart |
+| Generated artifacts | Deterministic; stale output fails validation |
+
+Visual review covers cursor visibility, selection, search, diagnostics, diff
+states, ANSI normal/bright separation, and 85% opacity on light and dark
+wallpapers. The complete record is in [`screenshots/QA.md`](screenshots/QA.md).
+
+## Build from the palette
+
+Generation requires Python 3.11+ and PyYAML.
 
 ```bash
 # Regenerate every generated terminal and CLI target.
 ./scripts/generate-all.sh
 
-# Validate palettes, editor exports, CLI integrations, and generated files.
+# Validate palettes, editors, integrations, screenshots, and generated output.
 ./scripts/check-generated.sh
 
 # Verify exact synchronization with the Omarchy source palette.
 ./scripts/validate-palettes.py \
   --source ~/Projects/themes/omarchy-waffle-cat-theme/colors.toml
-
-# Final post-commit release gate.
-./scripts/validate-release.py --require-clean
 ```
 
-The generated files identify themselves in their first line and should not be
-edited directly. Editor exports are intentionally maintained as portable files
-but are checked so that every embedded color derives from the canonical Base24
-palette.
+Generated files identify themselves in their first line; edit the canonical
+palette or generator instead. Representative Lua, Rust, Bash, Markdown, JSON,
+and diff fixtures live in [`qa/`](qa/).
 
-Use the terminal QA fixture with any installed supported terminal:
-
-```bash
-./scripts/launch-terminal-qa.sh alacritty 1.0
-./scripts/launch-terminal-qa.sh wezterm 0.85
-```
-
-Representative source fixtures live under [`qa/`](qa/). The complete release
-gate and remaining publication steps are recorded in
-[`RELEASE-CHECKLIST.md`](RELEASE-CHECKLIST.md).
-
-## Source relationship
+## The Omarchy connection
 
 The completed [Omarchy Waffle Cat theme][omarchy-theme] is the visual authority
-for Waffle Cat 2.0. Its `colors.toml` defines the authored semantic colors.
-This repository converts that palette into portable terminal, editor, and CLI
-formats.
+for Waffle Cat 2.0. Its `colors.toml` defines the semantic source values; this
+repository carries those values into portable tools.
 
 Omarchy-specific shell, GTK, Hyprland, Waybar, wallpaper, and desktop behavior
-remain in the Omarchy theme repository and are intentionally not duplicated
-here.
+stay in the theme repository. If you want the complete desktop rather than the
+portable colorscheme, install that project directly:
+
+```bash
+omarchy-theme-install https://github.com/OldJobobo/omarchy-waffle-cat-theme
+```
 
 ## Versioning
 
-Waffle Cat follows semantic versioning:
+Waffle Cat follows semantic versioning. Palette-compatible corrections are
+patches, new ports and substantial compatible coverage are minors, and changes
+to the canonical palette are majors. The final pre-2.0 palette remains
+available from the [`alpha-final` tag][alpha-final].
 
-- **Patch:** corrections to mappings, documentation, or target-specific roles
-  without changing the canonical palette.
-- **Minor:** new portable targets or substantial highlighting coverage that
-  remains palette-compatible.
-- **Major:** canonical palette changes or incompatible changes to exported
-  theme identity and structure.
+## Credits
 
-Version 2.0 is a palette-breaking release from the alpha generation. The final
-alpha state is recoverable from the `alpha-final` Git tag.
+<p align="center">
+  <img src="assets/waffle-cat-logo.png" alt="Waffle Cat logo" width="150">
+</p>
 
-## License
+Designed and maintained by [OldJobobo](https://github.com/OldJobobo).
+Released under the [MIT License](LICENSE).
 
-Waffle Cat is available under the [MIT License](LICENSE).
-
-## Attribution
-
-Waffle Cat was created by [OldJobobo](https://github.com/OldJobobo). The 2.0
-portable palette is derived from the completed Omarchy implementation and
-preserves its authored color values.
-
+[alpha-final]: https://github.com/OldJobobo/waffle-cat/tree/alpha-final
 [omarchy-theme]: https://github.com/OldJobobo/omarchy-waffle-cat-theme
