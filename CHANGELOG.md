@@ -3,7 +3,7 @@
 All notable changes to Waffle Cat are documented here. The project follows
 [Semantic Versioning](https://semver.org/).
 
-## [2.0.0] - Unreleased
+## [2.0.0] - 2026-08-16
 
 Waffle Cat 2.0 is a palette-breaking release from the alpha generation.
 

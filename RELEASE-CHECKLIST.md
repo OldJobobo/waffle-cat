@@ -63,13 +63,13 @@ Validated on 2026-08-16.
 - [x] Regeneration left the snapshot worktree clean.
 - [x] Neovim loaded the standalone colorscheme from the snapshot.
 
-## Final publication steps
+## Publication
 
-These remain intentionally unperformed until the release changes are reviewed:
+- [x] Complete repository diff reviewed.
+- [x] Waffle Cat 2.0 migration committed.
+- [x] `./scripts/validate-release.py --require-clean` passed.
+- [x] `v2.0.0` tag created.
+- [x] Migration commit, `alpha-final`, and `v2.0.0` pushed.
+- [x] GitHub release published from the prepared changelog entry.
 
-1. Review the complete repository diff.
-2. Commit the Waffle Cat 2.0 migration.
-3. Run `./scripts/validate-release.py --require-clean` in the committed tree.
-4. Create the `v2.0.0` tag.
-5. Push the migration commit, `alpha-final`, and `v2.0.0` tags.
-6. Publish the prepared changelog entry as the GitHub release notes.
+Release: https://github.com/OldJobobo/waffle-cat/releases/tag/v2.0.0
